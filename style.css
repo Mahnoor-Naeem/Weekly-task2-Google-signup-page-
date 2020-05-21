@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    /* width: 65%; */
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.form{
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nested-par{
+    margin: 10px;
+    padding: 15px;
+    /* parrent apperence */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#img-logo{
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+.flex-child{
+    padding: 5px 0;
+}
+.title{
+    font-size: 1.6em;
+}
+.i{
+    font-size: 1.3em;
+}
+.p{
+    font-size: .8em;
+}
+a{
+    text-decoration: none;
+    font-size: .8em;
+    color: #1a73e8;
+    font-weight: bold;
+}
+input{
+    border: 1px solid #dadce0;
+    size: 8px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: inherit;
+    margin-right: 10px;
+}
+.hidden-parrent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hidden-p{
+    color: #d93025;
+    font-size: .725em;
+    visibility: hidden;
+    
+}
+.btn-flex{
+    display: flex;
+    margin-right: inherit;
+
+    justify-content: space-between;
+}
+.sign-ins{
+    padding: 10px 30px 10px 0px;
+    border: none;
+    color: #1a73e8;
+    background-color: white;
+    font-size: .9em;
+    font-weight: 2em;
+}
+.next{
+    padding: 10px 30px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    font-size: .9em;
+    font-weight: 2em;
+    border-radius:5px;
+}
+/* On Right div */
+div.right-img figure{
+    position: relative;
+    top: 12em;
+}
+div.right-img figcaption{
+    font-size: .98em;
+    color: rgb(87, 87, 87);
+    text-align: center;
+}
+
+/* psedueclasses */
+
+input:invalid:focus{
+    visibility: visible;
+    border: 2px solid #d93025;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+input:focus{
+    border: 2px solid #1a73e8;
+}
