@@ -67,7 +67,7 @@ input{
 .hidden-p{
     color: #d93025;
     font-size: .725em;
-    visibility: hidden;
+    display: none;
     
 }
 .btn-flex{
@@ -106,9 +106,55 @@ div.right-img figcaption{
 
 /* psedueclasses */
 
+.form .nested-par .inp-field{
+    position: relative;
+    margin-bottom: 15px ;
+    /* margin: 0 60px 50px; */
+}
+/* .form .nested-par .inp-field input{
+    outline: none;
+    z-index: 1;
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    color: #212121;
+    font-size: 24px;
+    font-weight: 400;
+} */
+.form .nested-par .inp-field input:focus ~ label {
+    color: #9d9d9d;
+    font-size: 1em;
+    background-color: none;
+    border: none;
+    /* -webkit-transform: translate(-12%, -50%) scale(.75); */
+    transform: translate(0%, -100%) scale(0.75);
+  }
+
+  .form .nested-par .inp-field label {
+    /* visibility: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    margin: 15px 0 0 5px;
+    color: rgb(87, 87, 87);
+    background-color: white;
+    /* color: #757575;
+    font-weight: 300;
+    line-height: 60px; */
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+
+  .form .nested-par .inp-field input:focus::after ~ label {
+      display: none;
+      color: white;
+  } 
 input:invalid:focus{
     visibility: visible;
-    border: 2px solid #d93025;
+    /* border: 2px solid #d93025; */
 }
 
 input:valid{
@@ -116,4 +162,7 @@ input:valid{
 }
 input:focus{
     border: 2px solid #1a73e8;
+}
+a,button:hover{
+    cursor: pointer;
 }
